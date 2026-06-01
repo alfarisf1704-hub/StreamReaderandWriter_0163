@@ -41,6 +41,11 @@ int main()
     {
         while (getline(infile, Baris))
         {
+            cout << Baris << endl;
         }
+        infile.close();
     }
+    else
+        cout << "Unable to oprn file" << endl;
+    return 0;
 }
