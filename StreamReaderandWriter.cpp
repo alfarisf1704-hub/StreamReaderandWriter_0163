@@ -5,13 +5,12 @@ using namespace std;
 
 int main()
 {
-    string Baris, NamaFile;
-    cout << "Masukkan Nama File : " << endl;
-    cin >> NamaFile;
-
+    // deklarasoi variabel baris untuk menyimpan data string
+    string Baris;
     // membuat file mode menulis
     ofstream outfile;
-    outfile.open(NamaFile + ".txt", ios::out);
+    // merujuk ke sebuah nama file
+    outfile.open("contohfile.txt");
 
     cout << ">= Menulis File, \'q\' untuk keluar" << endl;
 
@@ -32,13 +31,14 @@ int main()
 
     // membuka file mode membaca
     ifstream infile;
-    infile.open(NamaFile + ".txt", ios::in);
+    infile.open("contohfile.txt");
 
     cout << endl
          << ">= Membuka dan membaca file" << endl;
     // jika file ada
     if (infile.is_open())
     {
+        // perulangan untuk memunculkan setiap baris
         while (getline(infile, Baris))
         {
             cout << Baris << endl;
