@@ -17,5 +17,7 @@ int main()
     // kondisi jika data selain tipe integer
     catch (...)
     {
+        cout << "default pengecualian dieksekusi" << endl;
     }
+    return 0;
 }
