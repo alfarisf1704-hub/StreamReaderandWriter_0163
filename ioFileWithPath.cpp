@@ -20,5 +20,8 @@ int main()
         cout << "- ";
         // mendapat setiap karakter dalam satu baris
         getline(cin, Baris);
+        if (Baris == "q")
+            break;
+        outfile << Baris << endl;
     }
 }
