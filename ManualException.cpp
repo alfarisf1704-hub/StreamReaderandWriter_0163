@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    try
+    try // membuat isi try buat pengujian error
     {
         cout << "Selamat belajar di prodi TI UMY" << endl;
         // throw 0.5;//melempar sebuah integer maka..
