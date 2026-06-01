@@ -14,4 +14,8 @@ int main()
     {
         cout << "Pengecualian akan dieksekusi" << endl;
     }
+    // kondisi jika data selain tipe integer
+    catch (...)
+    {
+    }
 }
