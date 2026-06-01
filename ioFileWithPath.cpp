@@ -9,6 +9,7 @@ int main()
     cout << "Masukkan Nama File : " << endl;
     cin >> NamaFile;
 
+    // membuat file mode menulis
     ofstream outfile;
     outfile.open(NamaFile + ",txt", ios::out);
 
@@ -28,4 +29,18 @@ int main()
     }
     // menutup file jika selesai ditulis
     outfile.close();
+
+    // membuka file mode membaca
+    ifstream infile;
+    infile.open(NamaFile + ",txt", ios::in);
+
+    cout << endl
+         << ">= Membuka dan membaca file" << endl;
+    // jika file ada
+    if (infile.is_open())
+    {
+        while (getline(infile, Baris))
+        {
+        }
+    }
 }
