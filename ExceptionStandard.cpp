@@ -12,5 +12,6 @@ int main()
         // memanggil data ke 5, berarti akan error
         cout << data.at(5) << endl;
     }
-    // kondisi jika error terjadi
+    // kondisi jika error terjadi dalam try
+    catch (exception &e);
 }
