@@ -6,6 +6,9 @@ int main()
     try
     {
         cout << "Selamat belajar di prodi TI UMY" << endl;
+        // throw 0.5;//melempar sebuah integer maka..
         cout << "Pernyataan tidak akan ditampilkan" << endl;
     }
+// kondisi jika data bertipe integer
+    catch 
 }
